@@ -1,0 +1,44 @@
+.container {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+
+.mainCard {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 20vw auto 20vw auto 20vw;
+    grid-template-rows: repeat(7, auto);
+}
+
+.childCard {
+    background: green;
+}
+
+
+.card1 {
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.card2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: span 3;
+}
+
+.card3 {
+    grid-row-start: 3;
+    grid-row-end: 6;
+
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+.card4 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 5 / span 3;
+}
